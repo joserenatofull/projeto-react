@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 //Hooks:Funções para acessar a api do react e usar uma funcionalidade especifica
-// hook para acesar estado
 import './ListaJogos.css';
 import instanciaAxios from './ajax/instanciaAxios';
-// criado o componente instancia axios.
-// o axios facilita a comunicação com ajax 
+
 import moment from 'moment';
 
 
@@ -30,7 +28,6 @@ const ListaJogos = () => {
   const [alertaNovoItem, setAlertaNovoItem] = useState('desligado');
   
   
-  //você diz ao React que o componente 
   //precisa fazer algo apenas depois da renderização
   useEffect(() => {
     pegarCampeonatos();
@@ -43,13 +40,10 @@ const ListaJogos = () => {
   }, []);
 
   const pegarCampeonatos = async () => {
-  // criada função para para pegar as campeonatos no formato json
 
     try {
-//cria resposta, aguarda tradução ajax/axios / pega o caminho e joga na const
       const resposta = await instanciaAxios.get('../json/campeonatos.json');
       console.log(`Resultado: ${ JSON.stringify( resposta.data ) }`);
-// recebe a função setListacampeonatos(const.dados.objeto)
       setListaCampeonatos(resposta.data.campeonatos);
       
 
@@ -138,12 +132,10 @@ const ListaJogos = () => {
         return listaDiasJSX;
       }else{return null}};
       
-  // componente com as opçoes de campeonatos:
 
  
 
   const OpcoesCampeonatosComponente = () => {
-//Map? Vai percorrer os dados/valores Percorrer cada item da lista
     const listaCampeonatosJSX = listaCampeonatos.map( ( item ) => {
       return (
         <option value={item.id} 
@@ -183,7 +175,6 @@ const ListaJogos = () => {
           };
           
   const OpcoesResultadosComponente = () => {
-    //Map? Vai percorrer os dados/valores Percorrer cada item da lista
         const listaResultadosJSX = listaResultados.map( ( item ) => {
           return (
         
