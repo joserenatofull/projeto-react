@@ -1,0 +1,51 @@
+{
+    "adversariosLibertadores": [
+      {
+        "id": "1",
+        "clube": "Boca-Juniors"
+      },
+      {
+        "id": "2",
+        "clube": "River-Plate"
+      },
+      {
+        "id": "3",
+        "clube": "Flamengo"
+      },
+      {
+        "id": "4",
+        "clube": "Independiente"
+      }
+      ,
+      {
+        "id": "5",
+        "clube": "Penarol"
+      } ,
+      {
+        "id": "6",
+        "clube": "São Paulo"
+      },
+      {
+        "id": "7",
+        "clube": "Gremio"
+      }
+      ,
+      {
+        "id": "8",
+        "clube": "Velez Sasfield"
+      }
+      ,
+      {
+        "id": "9",
+        "clube": "Flamengo"
+      } ,
+      {
+        "id": "10",
+        "clube": "Once Caldas"
+      } ,
+      {
+        "id": "11",
+        "clube": "Atletico Nacional"
+      }
+    ]
+  }

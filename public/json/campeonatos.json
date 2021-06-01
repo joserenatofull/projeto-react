@@ -1,0 +1,12 @@
+{
+  "campeonatos": [
+    {
+      "id": "1",
+      "descricao": "Libertadores"
+    },
+    {
+      "id": "2",
+      "descricao": "Paulista"
+    }
+  ]
+}

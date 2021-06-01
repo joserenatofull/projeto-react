@@ -1,0 +1,33 @@
+{
+    "adversariosPaulista": [
+      {
+        "id": "1",
+        "clube": "Corinthians"
+      },
+      {
+        "id": "2",
+        "clube": "São Paulo"
+      },
+      {
+        "id": "3",
+        "clube": "Santos"
+      },
+      {
+        "id": "4",
+        "clube": "Red bull - Bragantino"
+      },
+      {
+        "id": "5",
+        "clube": "Ponte Preta"
+      }
+      ,
+      {
+        "id": "6",
+        "clube": "Ituano"
+      },
+      {
+        "id": "7",
+        "clube": "São Caetano"
+      }
+    ]
+  }

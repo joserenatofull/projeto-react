@@ -1,0 +1,128 @@
+{
+  "jogos": [
+    {
+      "id": "0",
+      "descricao": "Palmeiras 3x0 Corinthians",
+      "idCampeonato": "2",
+      "idDia": "1",
+      "data": "12/03/2021",
+      "hora": "19:00",
+      "idResultado": "1",
+      "idAdversarioP": "1",
+      "alerta": "ligado"
+
+    },
+    {
+      "id": "1",
+      "descricao": "Palmeiras 4x0 Boca Juniors",
+      "idCampeonato": "1",
+      "idDia": "3",
+      "data": "19/03/2021",
+      "hora": "16:00",
+
+      "idResultado": "1",
+      "idAdversarioL": "1",
+      "alerta": "ligado"
+    },
+    {
+      "id": "2",
+      "descricao": "Corinthians 2x0 Palmeiras",
+      "idCampeonato": "2",
+      "idDia": "4",
+      "data": "27/03/2021",
+      "hora": "21:30",
+
+      "idResultado": "2",
+      "idAdversarioP": "1",
+      "alerta": "desligado"
+    },
+    {
+      "id": "3",
+      "descricao": "Santos 0x0 Palmeiras",
+      "idCampeonato": "2",
+      "idDia": "5",
+      "data": "04/04/2021",
+      "hora": "18:00",
+
+      "idResultado": "3",
+      "idAdversarioP": "3",
+      "alerta": "desligado"
+    },
+    {
+      "id": "4",
+      "descricao": "Independiente 1x0 Palmeiras",
+      "idCampeonato": "1",
+      "idDia": "4",
+      "data": "10/04/2021",
+      "hora": "18:00",
+
+      "idResultado": "2",
+      "idAdversarioL": "4",
+      "alerta": "desligado"
+    },
+    {
+      "id": "5",
+      "descricao": "Palmeiras 4x1 Flamengo",
+      "idCampeonato": "1",
+      "idDia": "6",
+      "data": "20/04/2021",
+      "hora": "16:00",
+
+      "idResultado": "1",
+      "idAdversarioL": "3",
+
+      "alerta": "ligado"
+    },
+    {
+      "id": "6",
+      "descricao": "Corinthians 3x3 Palmeiras",
+      "idCampeonato": "2",
+      "idDia": "1",
+      "data": "24/04/2021",
+      "hora": "16:00",
+
+      "idResultado": "3",
+      "idAdversarioP": "1",
+
+      "alerta": "desligado"
+    },
+    {
+      "id": "7",
+      "descricao": "Palmeiras 1x0 RB Bragantino",
+      "idCampeonato": "2",
+      "idDia": "4",
+      "data": "30/04/2021",
+      "hora": "22:00",
+
+      "idResultado": "1",
+      "idAdversarioP": "4",
+      "alerta": "desligado"
+    },
+    {
+      "id": "8",
+      "descricao": "Palmeiras 2x0 São Paulo",
+      "idCampeonato": "2",
+      "idDia": "4",
+      "data": "07/05/2021",
+      "hora": "16:00",
+
+      "idResultado": "1",
+      "idAdversarioP": "2",
+
+      "alerta": "desligado"
+    },
+    {
+      "id": "9",
+      "descricao": "River Plate 2x0 Palmeiras",
+      "idCampeonato": "1",
+      "idDia": "5",
+      "data": "13/05/2021",
+      "hora": "21:30",
+
+      "idResultado": "2",
+      "idAdversarioL": "2",
+
+      "alerta": "desligado"
+    }
+  ]
+}

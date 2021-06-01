@@ -1,0 +1,18 @@
+{
+    "resultado": [
+      {
+        "id": "1",
+        "descricao": "Vitoria"
+      },
+      {
+        "id": "2",
+        "descricao": "Derrota"
+
+      },
+      {
+        "id": "3",
+        "descricao": "Empate"
+
+      }
+    ]
+  }
