@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 //Hooks:Funções para acessar a api do react e usar uma funcionalidade especifica
 // hook para acesar estado
@@ -50,7 +49,7 @@ const ListaJogos = () => {
 //cria resposta, aguarda tradução ajax/axios / pega o caminho e joga na const
       const resposta = await instanciaAxios.get('../json/campeonatos.json');
       console.log(`Resultado: ${ JSON.stringify( resposta.data ) }`);
-// recebe a função setListacampeonatos(const.dados.objetos)
+// recebe a função setListacampeonatos(const.dados.objeto)
       setListaCampeonatos(resposta.data.campeonatos);
       
 
@@ -146,10 +145,7 @@ const ListaJogos = () => {
   const OpcoesCampeonatosComponente = () => {
 //Map? Vai percorrer os dados/valores Percorrer cada item da lista
     const listaCampeonatosJSX = listaCampeonatos.map( ( item ) => {
-    //criada a função listacampeonatosJSX recebe cada item listacampeonatos
       return (
-        //joga no option a lista com a descrição das campeonatos 
-        //key ? faz preencher automaticamento o id?
         <option value={item.id} 
         key={item.id}>
         
@@ -159,7 +155,6 @@ const ListaJogos = () => {
     } );
 
     return listaCampeonatosJSX;
-    //retornar a lista com as campeonatos para OpcoesCat....
   };
 
 
@@ -190,10 +185,8 @@ const ListaJogos = () => {
   const OpcoesResultadosComponente = () => {
     //Map? Vai percorrer os dados/valores Percorrer cada item da lista
         const listaResultadosJSX = listaResultados.map( ( item ) => {
-        //criada a função listacampeonatosJSX recebe cada item listacampeonatos
           return (
-            //joga no option a lista com a descrição das campeonatos 
-            //key ? faz preencher automaticamento o id?
+        
             <option value={item.id} 
             key={item.id}>
             
@@ -203,7 +196,6 @@ const ListaJogos = () => {
         } );
     
         return listaResultadosJSX;
-        //retornar a lista com as campeonatos para OpcoesCat....
       };
 
     
@@ -215,7 +207,6 @@ const ListaJogos = () => {
       }
       
   const CorpoTabelaComponente = () => {
-//criada a função com o nome das colunas
 if(listaJogos.length > 0){
     return (
       <tbody>
@@ -254,24 +245,19 @@ if(listaJogos.length > 0){
    
     const _campeonato = listaCampeonatos.find( item => {
     // return onde o item id da campeonatos for exatamente igual o id em idCat 
-    // da api jogos...
     // find para achar a campeonato
     
       return item.id === props.idCampeonato;
     } );
 
     const _adversarioL = listaAdversariosLibertadores.find( item => {
-      // return onde o item id da campeonatos for exatamente igual o id em idCat 
-      // da api jogos...
-      // find para achar a campeonato
+      
       
         return item.id === props.idAdversarioL;
       } );
 
       const _adversarioP = listaAdversariosPaulista.find( item => {
-        // return onde o item id da campeonatos for exatamente igual o id em idCat 
-        // da api jogos...
-        // find para achar a campeonato
+      
         
           return item.id === props.idAdversarioP;
         } );
@@ -279,9 +265,7 @@ if(listaJogos.length > 0){
    
 
     const _dia = listaDias.find( item => {
-      // return onde o item id da campeonatos for exatamente igual o id em idCat 
-      // da api jogos...
-      // find para achar a campeonato
+ 
       
         return item.id === props.idDia;
       } );
@@ -296,9 +280,7 @@ if(listaJogos.length > 0){
 
       const _alerta = props.alerta === 'ligado'? <AlertaIconeComponente /> : null;
 
-    // Preenche a linhaTabela com  
-    // coluna 1 props.descrição tarefa
-    // coluna 2 campeonato.nome da campeonato de acordo com id batendo nas 2 apis
+ 
     // 
     return (
       <tr>
@@ -323,31 +305,20 @@ if(listaJogos.length > 0){
     );
   };
 
-  // return para ListaJogos 
-  // static - campeonatos:  ComponenteOpcoescampeonatos
-  //static 1 linhas das colunas
-  // Preenchimento das linhas componente corpoTabela
+  
 
 
 const incluirItem = () => {
 if(campeonatoNovoItem > 0 && campeonatoNovoItem){
 // posições
  const indiceUltimoElemento = listaJogos.length - 1;
- // indiciUE recebe ultimo indice da lista 
- // lenght -1 para excluir pos 0 
+
  const ultimoElemento = listaJogos[ indiceUltimoElemento ];
- //ultimoE recebe listaJogos[ pos do UltimoE ]
- // ultimo elemento recebe o ultimo indice do array
 
-// indiceUltimo elemento ja esta configurado para inserir no fim do array
-
- //valores
- // indiceUltimoElemento recebe o Ultimo id da api
  const idUltimoElemento = ultimoElemento.id;
  //indiceUE recebe ultimo elemento puxando o id DO OBJ
  const idNovoItem = parseInt( idUltimoElemento ) +1;
- // idNovoItem recebe convertido para int porque na api esta string
- // recebe IdUltimoelemento somando mais 1 para ficar ordenado 
+ 
  let data = moment(dataNovoItem);
 
 
