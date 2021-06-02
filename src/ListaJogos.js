@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 //Hooks:Funções para acessar a api do react e usar uma funcionalidade especifica
 import './ListaJogos.css';
 import instanciaAxios from './ajax/instanciaAxios';
-
+// criado o componente instancia axios.
+// o axios facilita a comunicação com ajax 
 import moment from 'moment';
 
 
@@ -42,8 +43,10 @@ const ListaJogos = () => {
   const pegarCampeonatos = async () => {
 
     try {
+//cria resposta, aguarda tradução ajax/axios / pega o caminho e joga na const
       const resposta = await instanciaAxios.get('../json/campeonatos.json');
       console.log(`Resultado: ${ JSON.stringify( resposta.data ) }`);
+// recebe a função setListacampeonatos(const.dados.objeto)
       setListaCampeonatos(resposta.data.campeonatos);
       
 
@@ -132,6 +135,7 @@ const ListaJogos = () => {
         return listaDiasJSX;
       }else{return null}};
       
+  // componente com as opçoes de campeonatos:
 
  
 
@@ -235,8 +239,6 @@ if(listaJogos.length > 0){
   const LinhaTabelaComponente = ( props ) => {
    
     const _campeonato = listaCampeonatos.find( item => {
-    // return onde o item id da campeonatos for exatamente igual o id em idCat 
-    // find para achar a campeonato
     
       return item.id === props.idCampeonato;
     } );
@@ -307,7 +309,6 @@ if(campeonatoNovoItem > 0 && campeonatoNovoItem){
  const ultimoElemento = listaJogos[ indiceUltimoElemento ];
 
  const idUltimoElemento = ultimoElemento.id;
- //indiceUE recebe ultimo elemento puxando o id DO OBJ
  const idNovoItem = parseInt( idUltimoElemento ) +1;
  
  let data = moment(dataNovoItem);
@@ -317,14 +318,14 @@ if(campeonatoNovoItem > 0 && campeonatoNovoItem){
 
 
  let adv = {};
- if (campeonatoNovoItem == '1') {
+ if (campeonatoNovoItem === '1') {
    adv = adversarioLNovoItem
  } else {
   console.log('erro')
  }
 
  let adv2 = {};
- if (campeonatoNovoItem == '2') {
+ if (campeonatoNovoItem === '2') {
    adv2 = adversarioPNovoItem
  } else {
   console.log('erro')
